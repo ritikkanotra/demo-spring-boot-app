@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.one.demo.model.User;
+//import com.example.one.demo.model.User;
 import com.example.one.demo.service.UserService;
 
 @RestController
@@ -17,12 +17,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping(value = "/register")
-    public ResponseEntity<String> register(@RequestBody User user) {
-
-        String resposeString = userService.register(user.getEmail(), user.getPassword());
-        return new ResponseEntity<String>(resposeString, null, 200);
-
-    }
+//    @PostMapping(value = "/register")
+//    public ResponseEntity<String> register(@RequestBody User user) {
+//
+//        String resposeString = userService.register(user.getEmail(), user.getPassword());
+//        return new ResponseEntity<String>(resposeString, null, 200);
+//
+//    }
 
 }
